@@ -389,3 +389,36 @@ h6 {
   filter: brightness(0) invert(1);
   /* força branco no SVG preto externo */
 }
+/* Esconde o botão no desktop */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: var(--dark);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    margin: 10px 0;
+    color: #fff;
+  }
+}
