@@ -1,0 +1,383 @@
+:root {
+  --accent: #0055A5;
+  --dark: #003366;
+  --muted: #cfd8e3;
+  --bg: #E6F0FA;
+  --text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(rgba(0, 85, 165, 0.7), rgba(0, 51, 102, 0.7)),
+              url("imagens/fundo-transito.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px;
+  background-color: transparent;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav a {
+  margin-left: 18px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 28px;
+  align-items: start;
+  padding: 30px 0;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.hero p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.bullets {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.chip {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: var(--accent);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* Formulário */
+.form-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 18px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: #0F1724;
+}
+
+.form-card label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #123;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dbe8ff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #0F1724;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+  color: #64748B;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.whatsapp {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Serviços */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.service {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 18px;
+  border-radius: 12px;
+  border: none;
+  color: #0F1724;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service .icon {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: var(--accent);
+}
+
+.service svg {
+  width: 32px;
+  height: 32px;
+}
+
+.service h4 {
+  margin-bottom: 6px;
+  color: var(--accent);
+}
+
+.service p {
+  margin: 0;
+  color: #64748B;
+  font-size: 14px;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 28px;
+  padding: 20px 0;
+  color: var(--muted);
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-left {
+  background: rgba(240, 240, 240, 0.85); /* cinza claro com leve transparência */
+  padding: 20px;
+  border-radius: 8px;
+  color: #0F1724; /* texto escuro para contraste */
+}
+
+.footer-left h6,
+.footer-left p,
+.footer-left a,
+.footer-left strong {
+  font-size: 16px;
+  color: #0F1724;
+}
+
+h6 {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-left a {
+  text-decoration: none;
+  color: var(--accent); /* azul institucional */
+}
+
+.footer-left a:hover {
+  color: black; /* preto ao passar o mouse */
+  text-decoration: underline;
+}
+
+.footer-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-left h4, .footer-right h4 {
+  margin-bottom: 12px;
+  font-size: 25px;
+  color: var(--accent);
+}
+
+.footer-left p, .footer-right p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-right form input,
+.footer-right form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #dbe8ff;
+  font-size: 14px;
+}
+
+.footer-right form button {
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .container {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.whatsapp {
+  color: #1ebe5d;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+}
+
+.icon-whatsapp {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  /* força branco no SVG preto externo */
+}

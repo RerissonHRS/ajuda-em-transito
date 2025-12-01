@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ajuda em Trânsito — Defesa Rápida e Eficaz</title>
+    <meta name="description" content="Suporte jurídico e administrativo para problemas de trânsito: multas, suspensão, defesa e perícias." />
+    <meta name="keywords" content="multas de trânsito, recurso CNH, suspensão CNH, defesa de autuação, advogado trânsito" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="brand">
+          <div class="logo">TR</div>
+          <div>
+            <div style="font-weight:800">Ajuda em Trânsito</div>
+            <div class="Subtitulo">Multas, defesas e recursos</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#servicos">Serviços</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#contato" class="btn">Análise grátis</a>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <div class="bullets">
+            <span class="chip">Respostas em até 24h</span>
+            <span class="chip">Equipe especializada</span>
+            <span class="chip">Qualidade nos processos</span>
+          </div>
+          <h1 id="hero-heading">CNH suspensa, cassada ou pontos estourados?</h1>
+          <p>Recuperar o direito de dirigir é mais do que resolver uma multa: é retomar sua liberdade de ir e vir. Com ajuda especializada, você evita burocracias e garante que cada detalhe do seu caso seja analisado com atenção. Nosso atendimento é rápido, pensado para quem precisa de soluções imediatas sem perder tempo. A análise gratuita permite que você saiba exatamente quais são suas chances antes de qualquer decisão. Contamos com defesa técnica personalizada, adaptada às particularidades de cada processo de trânsito. Seja suspensão da CNH, excesso de pontos ou autuações indevidas, oferecemos estratégias eficazes. Acompanhamos cada etapa, desde a coleta de documentos até a entrega da defesa junto ao órgão competente. Nosso compromisso é simplificar o processo e proteger seus direitos de forma transparente. Com nossa equipe, você não enfrenta sozinho os desafios do trânsito — nós cuidamos de tudo por você.</p>
+          <div class="cta">
+            <a href="#contato" class="btn">Solicitar avaliação gratuita</a>
+            <a href="https://wa.me/554498219161" target="_blank" class="btn-whatsapp">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="icon-whatsapp" />
+              <span>Nosso WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <aside>
+          <div class="form-card" id="contato" aria-label="Formulário de contato">
+            <h3>Avaliação gratuita do seu caso</h3>
+            <p class="form-info">Preencha os dados abaixo e receba orientação inicial em até 24h.</p>
+            <form action="https://formspree.io/f/seu-endpoint" method="POST">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" required placeholder="Seu nome" />
+
+              <label for="telefone">Telefone</label>
+              <input id="telefone" name="telefone" type="tel" required placeholder="(00) 0 0000-0000" />
+
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@email.com" />
+
+              <label for="assunto">Assunto</label>
+              <input id="assunto" name="assunto" type="text" placeholder="Ex.: Recurso de multa" />
+
+              <label for="mensagem">Descrição do caso</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva seu caso brevemente..."></textarea>
+
+              <div class="row">
+                <button type="submit" class="btn">Enviar avaliação</button>
+                <a href="/politica-de-privacidade.html" class="btn-ghost">Política de privacidade</a>
+              </div>
+            </form>
+
+            <div class="whatsapp">
+              Ou solicite atendimento pelo WhatsApp:
+              <a href="https://wa.me/554498219161" target="_blank" class="btn-whatsapp">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="icon-whatsapp" />
+                <span>Nosso WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Serviços -->
+      <section class="services" id="servicos">
+        <article class="service">
+          <div class="icon">
+            <i class="fa-solid fa-file-contract"></i>
+          </div>
+          <h4>Recursos de multa</h4>
+          <p>Preparamos recursos administrativos e orientamos nas melhores estratégias para cancelar ou reduzir penalidades.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <h4>Defesa de suspensão</h4>
+          <p>Acompanhamento completo em casos de suspensão da CNH e defesa técnica junto ao órgão de trânsito.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <h4>Perícias e laudos</h4>
+          <p>Indicação de perícias quando necessário e suporte na análise de documentos e imagens.</p>
+        </article>
+      </section>
+      <!-- Como funciona -->
+      <section class="steps" id="como-funciona">
+        <h3>Como funciona</h3>
+        <ol>
+          <li>Você envia as informações básicas e documentos.</li>
+          <li>Fazemos análise inicial e sugerimos estratégia.</li>
+          <li>Preparamos recurso/defesa e encaminhamos.</li>
+        </ol>
+      </section>
+
+      <!-- Depoimentos -->
+      <section class="testimonials">
+        <h3>Depoimentos</h3>
+        <p>"Excelente atendimento, resolveram minha suspensão em menos de 30 dias!" — Rodrigo M.</p>
+        <p>"Equipe técnica muito preparada, recomendo!" — Daniela S.</p>
+      </section>
+
+      <!-- Sobre nós -->
+      <section class="about" id="sobre">
+        <h3>Quem somos</h3>
+        <p>Somos especialistas em Direito de Trânsito com mais de 6 anos de experiência e mais de 500 processos anulados. Atuamos com honestidade, transparência e foco em resultados.</p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-contact" aria-label="Informações de contato e formulário de retorno">
+        <div class="footer-box">
+          <div class="footer-left">
+            <h6>Entrar em Contato</h6>
+            <p>
+              <strong>Telefone/WhatsApp:</strong> <a href="https://wa.me/554498219161" target="_blank">(44) 98219-161</a>
+            </p>
+            <p>
+              <strong>E-mail:</strong> <a href="alves.c.fredi@gmail.com">contato@ajudaemtransito.com.br</a>
+            </p>
+            <p>
+              <strong>OAB:</strong>OAB/PR 129.749
+            </p>
+            <p>
+              <a href="/politica-de-privacidade.html" class="btn-ghost" target="_blank">Política de privacidade</a>
+            </p>
+          </div>
+          <div class="footer-right">
+            <h6>Se preferir, deixe seu contato e nós te ligamos:</h6>
+            <form action="https://formspree.io/f/seu-endpoint" method="POST">
+              <input type="text" name="nome" placeholder="Nome" required />
+              <input type="tel" name="telefone" placeholder="Telefone" required />
+              <input type="email" name="email" placeholder="E-mail" />
+              <textarea name="mensagem" rows="3" placeholder="Mensagem"></textarea>
+              <button type="submit" class="btn">ENVIAR</button>
+            </form>
+            <p>
+              <a href="/politica-de-privacidade.html" class="btn-ghost" target="_blank">Política de privacidade</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
