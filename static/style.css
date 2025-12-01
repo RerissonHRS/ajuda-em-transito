@@ -14,7 +14,7 @@
 
 body {
   background: linear-gradient(rgba(0, 85, 165, 0.7), rgba(0, 51, 102, 0.7)),
-              url("static/imagens/fundo-transito.jpg") no-repeat center center;
+              url("https://mobilidade.estadao.com.br/wp-content/uploads/2025/11/AdobeStock_396243962-1_menor.jpg.webp") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: var(--text);
