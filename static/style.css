@@ -41,21 +41,39 @@ header {
 
 .brand {
   display: flex;
-  gap: 12px;
   align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .logo {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  background: var(--accent);
+  background: #0055A5;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.texto-identidade h1 {
+  font-size: 24px;
+  font-weight: 800;
   color: #fff;
-  font-weight: 700;
-  font-size: 20px;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 16px;
+  color: #cce4ff;
+  margin-top: 4px;
 }
 
 nav a {
