@@ -500,6 +500,22 @@ button[type="submit"]:active {
   justify-content: center;
 }
 
+.servicos-detalhe ul li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.servicos-detalhe ul li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .servicos-detalhe li::before {
   content: "✅";
   margin-right: 10px;
