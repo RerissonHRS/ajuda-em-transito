@@ -31,6 +31,11 @@ body {
 }
 
 /* Header */
+header.scrolled {
+  background: #003366;
+  transition: background 0.3s ease;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -614,3 +619,10 @@ button[type="submit"]:active {
   margin: 8px 0;
   color: #0F1724;
 }
+
+header nav a.active {
+  border-bottom: 2px solid #FFD700;
+  color: #FFD700;
+  transition: all 0.3s ease;
+}
+ 
