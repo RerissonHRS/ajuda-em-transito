@@ -465,3 +465,121 @@ button[type="submit"]:active {
   transform: scale(0.97);
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
+/* Seção O que fazemos */
+.servicos-detalhe {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.servicos-detalhe h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0055A5;
+  margin-bottom: 20px;
+}
+
+.servicos-detalhe ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.servicos-detalhe li {
+  margin: 8px 0;
+  color: #0F1724;
+}
+
+/* Avaliação sem compromisso */
+.avaliacao {
+  background: #f5f9ff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.avaliacao h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.avaliacao p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0055A5;
+}
+
+/* CTA forte */
+.cta-multa {
+  text-align: center;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0055A5, #003366);
+  color: #fff;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.cta-multa h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.cta-multa ol {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-grande {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 32px;
+  background: #FFD700;
+  color: #003366;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-grande:hover {
+  background: #FFC107;
+  transform: translateY(-3px);
+}
+
+/* Seção sobre */
+.sobre {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sobre h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0055A5;
+  margin-bottom: 15px;
+}
+
+.sobre p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #0F1724;
+}
