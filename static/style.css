@@ -468,16 +468,22 @@ button[type="submit"]:active {
 
 /* Seção O que fazemos */
 .servicos-detalhe {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6); /* sobreposição escura */
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
   max-width: 900px;
   margin: 60px auto;
   text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
 .servicos-detalhe h2 {
   font-size: 28px;
   font-weight: 800;
-  color: #0055A5;
   margin-bottom: 20px;
+  color: #FFD700; /* destaque dourado */
 }
 
 .servicos-detalhe ul {
@@ -489,8 +495,17 @@ button[type="submit"]:active {
 
 .servicos-detalhe li {
   margin: 8px 0;
-  color: #0F1724;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.servicos-detalhe li::before {
+  content: "✅";
+  margin-right: 10px;
+  color: #00FF88;
+}
+
 
 /* Avaliação sem compromisso */
 .avaliacao {
